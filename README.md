@@ -8,6 +8,6 @@ In this simple project, you have three main things: word counter, letter counter
 - CSS for styling
 - JavaScript for logic
 
-**FUTURE WORK**
+## FUTURE WORK
 
 - being able to find and highlight specific word/letter
