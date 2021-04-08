@@ -69,12 +69,12 @@ header {
 .form-wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 0rem 2rem;
 }
@@ -86,7 +86,7 @@ form {
 }
 
 #paragraph {
-  width: 100%;
+  width: 66.66%;
   height: 380px;
   padding: 1rem;
   resize: none;
