@@ -52,3 +52,15 @@ header {
   display: flex;
   justify-content: center;
 }
+
+.box-header {
+  height: 50%;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+.box-footer {
+  height: 50%;
+  justify-self: flex-end;
+  align-items: flex-end;
+}
