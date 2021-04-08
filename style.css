@@ -36,7 +36,6 @@ header {
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 33.33%;
   height: 200px;
   margin: 1rem;
@@ -46,4 +45,10 @@ header {
   color: var(--grey);
   font-weight: 700;
   font-size: 2rem;
+}
+
+.box-header,
+.box-footer {
+  display: flex;
+  justify-content: center;
 }
