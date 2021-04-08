@@ -40,7 +40,6 @@ header {
   height: 200px;
   margin: 1rem;
   padding: 1rem;
-  border-radius: 10px;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -83,6 +82,7 @@ form {
 .box,
 #paragraph {
   box-shadow: 0px 3px 20px var(--grey);
+  border-radius: 10px;
 }
 
 #paragraph {
@@ -91,5 +91,4 @@ form {
   padding: 1rem;
   resize: none;
   border: none;
-  border-radius: ;
 }
