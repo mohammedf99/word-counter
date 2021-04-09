@@ -11,8 +11,6 @@ paragraph.addEventListener("input", function (e) {
   } else {
     wordDiv.textContent = words.length;
   }
-  console.log(paragraph);
-  console.log(typeof paragraph.textContent);
 });
 
 microphone.addEventListener("click", function () {
