@@ -2,9 +2,12 @@ const paragraph = document.getElementById("paragraph");
 const wordDiv = document.getElementById("word");
 const btn = document.querySelector("button");
 const microphone = document.querySelector("#microphone");
+const character = document.querySelector("#char");
 
 paragraph.addEventListener("input", function (e) {
   paragraph.textContent = e.target.value;
+  let a = countCharacters(paragraph);
+  character.textContent = a;
   const words = paragraph.textContent.trim().split(" ");
   if (paragraph.textContent === "") {
     wordDiv.textContent = 0;
@@ -24,3 +27,43 @@ microphone.addEventListener("click", function () {
 
   window.speechSynthesis.speak(speech);
 });
+
+function countCharacters(para) {
+  let charLength = 0;
+
+  const chars = [
+    " ",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "*",
+    "(",
+    ")",
+    "-",
+    "=",
+    "?",
+    ".",
+    "/",
+    "'",
+    '"',
+    "[",
+    "]",
+    "\\",
+  ];
+
+  for (const element of para.value) {
+    charLength++;
+
+    for (let i = 0; i < chars.length; i++) {
+      if (element === chars[i]) {
+        charLength--;
+      }
+    }
+  }
+
+  return charLength;
+  // return 0;
+}
