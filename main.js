@@ -2,12 +2,13 @@ const paragraph = document.getElementById("paragraph");
 const wordDiv = document.getElementById("word");
 const btn = document.querySelector("button");
 const microphone = document.querySelector("#microphone");
-const character = document.querySelector("#char");
+const letter = document.querySelector("#letter");
 
 paragraph.addEventListener("input", function (e) {
   paragraph.textContent = e.target.value;
-  let a = countCharacters(paragraph);
-  character.textContent = a;
+
+  letter.innerText = countCharacters(paragraph);
+
   const words = paragraph.textContent.trim().split(" ");
   if (paragraph.textContent === "") {
     wordDiv.textContent = 0;
@@ -52,6 +53,7 @@ function countCharacters(para) {
     "[",
     "]",
     "\\",
+    ",",
   ];
 
   for (const element of para.value) {
